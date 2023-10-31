@@ -734,7 +734,7 @@ class RedirectTest extends TestCase
      * @param array $session the session variables
      * @param array $cookie the cookies
      */
-    public function performRedirectTest($from, mixed $to, $urlManager, $request = [], $session = [], $cookie = [], $server = []): void
+    public function performRedirectTest($from, $to, $urlManager, $request = [], $session = [], $cookie = [], $server = []): void
     {
         $this->tearDown();
         $this->mockUrlManager($urlManager);
